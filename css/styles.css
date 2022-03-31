@@ -1,9 +1,11 @@
 *{
     margin: 0;
     padding: 0;
+    text-decoration: none;
 }
 html{
     font-size: 62.5%;
+    
 }
 /* INDEX*/
 
@@ -24,6 +26,7 @@ html{
     flex-direction: row;
     justify-content:space-around;
     padding: 10rem 1rem 2rem 1rem;
+    background:linear-gradient( #af6759,#fffdfd);
 }
 
 .cajaGridIndex{
@@ -107,6 +110,13 @@ main h1{
     display: inline-block;
     padding: 1rem 10rem 1rem 1rem;
 }
+#btnRojo{
+    background-color: red;
+    border-radius: 10px;
+    padding: 10px;
+    padding-right: 10px;
+}
+
 
 
 main h1{
@@ -133,6 +143,7 @@ main h1{
     font-family:Cormorant Garamond, serif;
     text-transform: uppercase;
     font-size: 2.5rem;
+    
     
 }
 article p{
@@ -243,7 +254,7 @@ height: 600px;
         flex-direction: column;
     }
     .ulSepara{
-        display: flex;
+        display: flex;  
         flex-direction: column;
         align-items: center;
     }
@@ -260,15 +271,5 @@ align-items: center;
         font-size: 18px;
     }
     }
-
-
-/* class="animate__animated animate__flash"   --- novedades 
-class="animate__animated animate__backInLeft"  ----- bienvenidos index
-
- class="animate__animated animate__bounceIn"---h1 sobre mi
- class="animate__animated animate__flash"  ----- footer sobre mi
- class="animate__animated animate__shakeX" ----parrafo sobre mi
- */
-
 
 
