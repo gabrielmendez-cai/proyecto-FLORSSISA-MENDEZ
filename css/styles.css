@@ -1,0 +1,274 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 62.5%;
+}
+/* INDEX*/
+
+
+.parrafoIn{
+    background-color: #af6759;
+    font-family:Cormorant Garamond, serif;
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    color: #fffdfd;
+    text-align: center;
+    padding: 5rem 1rem 1rem 1rem;
+}
+
+.sectionIn{
+    background-color: #af6759;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    padding: 10rem 1rem 2rem 1rem;
+}
+
+.cajaGridIndex{
+    display: grid;
+    grid-template-columns:repeat(2, 1fr);
+    grid-template-rows:repeat(4, 0.01fr);
+    grid-template-areas: 
+    "headerin headerin"
+    "tituloin tutuloin"
+    "centro   centro"
+    "footerin  footerin"
+    ;
+    
+}
+
+header {
+    grid-area: headerin;
+}
+.mainIndex{
+    grid-area: tituloin;
+}
+
+.sectionIn{
+grid-area: centro;
+}
+.menuFsobre{
+grid-area: footerin;
+}
+
+.cajaGridIndex{
+    display: flex;
+    flex-direction: column;
+}
+.animate__backInLeft{
+    animation-duration: 3s;
+}
+.animate__flash{
+    animation-iteration-count: infinite;
+}
+
+/*Media queries Index */
+@media screen and (max-width:768px){
+main h1{
+    font-size: 30px;
+}
+.parrafoIn{
+    font-size: 20px;
+}
+.sectionIn{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 300px;
+}
+.fotoIn{
+    padding-bottom: 20px;
+}
+}
+
+@media screen and (max-width:500px){
+.fotoIn{
+    width: 350px;
+    height: 350px;
+    padding-bottom: 20px;
+}
+.iframeIn{
+    width: 350px;
+    height: 350px;
+}
+
+}
+.menuNav{
+    background-color: whitesmoke;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    
+}
+.menuNav li{
+    display: inline-block;
+    padding: 1rem 10rem 1rem 1rem;
+}
+
+
+main h1{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 3.5rem;
+    padding-top: 1rem;
+    font-family:Roboto Serif, serif;
+    font-style: italic;
+    color: #fffdfd;
+    background-color: #af6759;
+}
+.cajaSobreMi{
+    display: flex;
+    align-items: flex-start;
+    font-size: 2rem;
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 3rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 1rem;
+    background-color: #af6759;
+    font-family:Cormorant Garamond, serif;
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    
+}
+article p{
+    margin: 1rem 1rem 1rem 1rem;
+    color: black;
+    color: #fffdfd;
+}
+
+.menuFsobre{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color:#a9bcae;
+    font-family:Roboto Serif, serif;
+    font-style: italic;
+    font-size: 2rem;
+}
+.menuFsobre h3{
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.separa{
+    display: flex;
+    justify-content: center;
+    font-size: 1rem;
+}
+.separa li{
+padding: 1rem 2rem 1rem 2rem;
+font-size: 2.5rem;
+list-style: none;
+}
+.cajaGridSobre{
+    display: grid;
+    grid-template-columns:repeat(2, 1fr);
+    grid-template-rows:repeat(4,0.01fr) ;
+    grid-template-areas: 
+    "header header"
+    "titulo titulo"
+    "centro centro"
+    "pie       pie"
+    ;
+}
+header{
+    grid-area: header;
+}
+.mainSobre{
+    grid-area:titulo ;
+}
+.cajaSobreMi{
+grid-area: centro;
+}
+.menuFsobre{
+    grid-area: pie;
+}
+.animate__bounceIn{
+    animation-duration: 2s;
+}
+.animate__shakeX{
+    animation-delay: 4s;
+}
+  /*media queries sobre mi */  
+@media screen and (max-width:768px){
+.menuNav{
+    font-size: 11px;
+}
+.menuNav li{
+    display: flex;
+    padding: 10px 10px 10px 10px;
+}
+.ulSepara{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.mainSobre h1{
+    font-size: 30px;
+    padding-top: 30px;
+    padding-bottom: 25px;
+}
+.fotoSobre{
+width: 400px;
+height: 600px;
+}
+.cajaSobreMi{
+    padding-bottom: 25px;
+}
+.cajaSobreMi p{
+    font-size: 20px;
+}
+.menuFsobre h3{
+    font-size: 17px;
+}
+.separa{
+    display: flex;
+    flex-direction: column;
+
+    
+}
+}
+
+@media screen and (max-width:500px){
+    .menuNav{
+        font-size: 9px;
+        display: flex;
+        flex-direction: column;
+    }
+    .ulSepara{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .cajaSobreMi{
+display: flex;
+flex-direction: column;
+align-items: center;
+
+    }
+    .mainSobre h1{
+        font-size: 25px;}
+
+    .cajaSobreMi p{
+        font-size: 18px;
+    }
+    }
+
+
+/* class="animate__animated animate__flash"   --- novedades 
+class="animate__animated animate__backInLeft"  ----- bienvenidos index
+
+ class="animate__animated animate__bounceIn"---h1 sobre mi
+ class="animate__animated animate__flash"  ----- footer sobre mi
+ class="animate__animated animate__shakeX" ----parrafo sobre mi
+ */
+
+
+
